@@ -44,7 +44,7 @@ const HowItWorks = () => {
           <h2 className="text-5xl md:text-6xl font-space font-bold mb-6">
             How It <span className="gradient-text">Works</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-muted-foreground/90 max-w-3xl mx-auto font-normal leading-relaxed">
             Get professional speaking feedback in just four simple steps
           </p>
         </div>
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                 </div>
               </div>
               <h3 className="text-xl font-space font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed font-light">{step.description}</p>
+              <p className="text-muted-foreground/90 leading-relaxed font-normal">{step.description}</p>
             </div>
           ))}
         </div>

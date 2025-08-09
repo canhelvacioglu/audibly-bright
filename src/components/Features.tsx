@@ -31,7 +31,7 @@ const Features = () => {
           <h2 className="text-5xl md:text-6xl font-space font-bold mb-6">
             Everything You Need to <span className="gradient-text">Excel</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-muted-foreground/90 max-w-3xl mx-auto font-normal leading-relaxed">
             Our AI analyzes multiple aspects of your speaking to give you comprehensive, 
             actionable feedback for rapid improvement.
           </p>

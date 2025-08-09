@@ -19,7 +19,7 @@ const FeatureCard = ({ icon: Icon, title, description, delay = 0 }: FeatureCardP
         </div>
       </div>
       <h3 className="text-2xl font-space font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">{title}</h3>
-      <p className="text-muted-foreground leading-relaxed font-light text-lg">{description}</p>
+      <p className="text-muted-foreground/90 leading-relaxed font-normal text-base">{description}</p>
       
       {/* Decorative element */}
       <div className="mt-6 h-1 w-0 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-500 rounded-full"></div>
