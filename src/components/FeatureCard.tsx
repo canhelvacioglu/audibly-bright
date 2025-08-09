@@ -10,18 +10,19 @@ interface FeatureCardProps {
 const FeatureCard = ({ icon: Icon, title, description, delay = 0 }: FeatureCardProps) => {
   return (
     <div 
-      className="bg-card rounded-xl p-6 shadow-soft hover-lift transition-smooth animate-fade-in"
-      style={{ animationDelay: `${delay}ms` }}
+      className="glass p-8 rounded-2xl border-0 hover-lift animate-fade-in group cursor-pointer"
+      style={{ animationDelay: `${delay}ms`, animationFillMode: 'both' }}
     >
-      <div className="flex flex-col items-center text-center">
-        <div className="p-3 rounded-lg hero-gradient mb-4">
+      <div className="mb-6">
+        <div className="p-4 rounded-2xl hero-gradient w-fit neon-glow group-hover:scale-110 transition-transform duration-300">
           <Icon className="h-8 w-8 text-white" />
         </div>
-        
-        <h3 className="text-xl font-semibold text-foreground mb-3">{title}</h3>
-        
-        <p className="text-muted-foreground leading-relaxed">{description}</p>
       </div>
+      <h3 className="text-2xl font-space font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">{title}</h3>
+      <p className="text-muted-foreground leading-relaxed font-light text-lg">{description}</p>
+      
+      {/* Decorative element */}
+      <div className="mt-6 h-1 w-0 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-500 rounded-full"></div>
     </div>
   );
 };
