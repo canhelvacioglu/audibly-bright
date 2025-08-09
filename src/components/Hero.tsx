@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-image.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center subtle-gradient overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <img 
           src={heroImage} 
           alt="AI Speech Analysis Visualization" 
